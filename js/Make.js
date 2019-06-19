@@ -50,14 +50,14 @@
         for( var i = 0; i < names.length; i++ ){
 
           x = getX(oX); 
-          var l = new THREE.Vector3( x , -1 * i-2, -Math.random()*2-1.2);
+          var l = new THREE.Vector3( x , -1.8 * i-2, -Math.random()*2-1.2);
           InitName(names[i],l);
 
           oX = x;
         }
 
 
-        controls.minPos     = -names.length -3;
+        controls.minPos     = -names.length * 1.8 -5;
 
 
         // SNOW top!
